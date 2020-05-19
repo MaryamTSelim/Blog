@@ -1,0 +1,25 @@
+@import "src/Sass/Variable.scss";
+.error-page {
+	height: 80vh;
+	.header {
+		font-size: 3rem;
+		width: fit-content;
+		margin: auto;
+		&::after {
+			content: "";
+			background-image: linear-gradient(
+				to right,
+				$my-violet,
+				$my-maroon,
+				$my-maroon,
+				$my-violet
+			);
+			width: 50vh;
+			height: 0.4rem;
+			border-radius: 4rem;
+		}
+	}
+	img {
+		width: 30rem;
+	}
+}

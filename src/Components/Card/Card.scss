@@ -1,0 +1,23 @@
+@import "src/Sass/Variable.scss";
+.card-container.home-child {
+	.card-image {
+		border-radius: 50%;
+		width: 13rem;
+		height: 13rem;
+		background-size: cover;
+	}
+	.card-title {
+		font-weight: 600;
+		font-size: 1.4rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.card-indicator {
+		font-size: 1.3rem;
+	}
+	.card-body {
+		font-size: 1.1rem;
+		text-align: center;
+	}
+}

@@ -1,0 +1,44 @@
+@import "src/Sass/Variable.scss";
+.home {
+	.home-indicator {
+		font-size: 3rem;
+		color: $my-orange;
+		margin: 0px 2rem;
+		&-container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			&::before {
+				content: "";
+				display: block;
+				width: 30%;
+				height: 0.6rem;
+				background-image: linear-gradient(
+					to left,
+					$my-red,
+					$my-maroon,
+					$my-violet
+				);
+				border-radius: 5rem;
+			}
+			&::after {
+				content: "";
+				display: block;
+				width: 30%;
+				height: 0.6rem;
+				background-image: linear-gradient(
+					to right,
+					$my-red,
+					$my-maroon,
+					$my-violet
+				);
+				border-radius: 5rem;
+			}
+		}
+	}
+	.content-header,
+	.content-header span {
+		font-size: 2rem;
+		font-weight: 600;
+	}
+}

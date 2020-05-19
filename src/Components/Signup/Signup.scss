@@ -1,0 +1,25 @@
+@import "src/Sass/Variable.scss";
+form.Signin {
+	input {
+		width: 100%;
+		margin: 0.7rem;
+		padding: 0.2rem 1rem;
+		border: none;
+		border-bottom: 2px solid $my-gold;
+		outline: none;
+		transition: all 0.5s linear;
+
+		&:focus {
+			border-bottom: 2px solid $my-maroon;
+		}
+		&[type="submit"] {
+			background-color: white;
+			border: 2px solid $my-gold;
+			display: block;
+			margin: 1.5rem auto;
+			&:hover {
+				border: 2px solid $my-maroon;
+			}
+		}
+	}
+}

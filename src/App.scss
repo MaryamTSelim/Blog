@@ -1,0 +1,31 @@
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+@import "src/Sass/Variable.scss";
+/*Header font*/
+@font-face {
+	font-family: Leckerli_One;
+	src: url("./Fonts/LeckerliOne-Regular.otf") format("opentype");
+}
+/*Title font*/
+@font-face {
+	font-family: NoSeven;
+	src: url("./Fonts/No.\ Seven\ Regular.otf") format("opentype");
+}
+/*Normal Text*/
+@font-face {
+	font-family: Muli;
+	src: url("./Fonts/Muli\ Light.ttf") format("truetype");
+}
+
+* {
+	font-family: Muli;
+	padding: 0px;
+	margin: 0px;
+	overflow-x: hidden;
+}
+
+a {
+	color: black;
+	&:hover {
+		text-decoration: none;
+	}
+}
