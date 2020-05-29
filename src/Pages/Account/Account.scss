@@ -1,0 +1,80 @@
+@import "src/Sass/Variable.scss";
+.account {
+	.cover {
+		background-image: url("/AccountCover.jpg");
+		background-size: cover;
+		background-position: center;
+		height: 45vh;
+		margin: 0px;
+	}
+	.account-image {
+		position: relative;
+		top: -15vh;
+		width: 30vh;
+		height: 30vh;
+		background-color: $my-dark-grey;
+		border-radius: 50%;
+		border: 1vh solid white;
+		margin: 0px auto;
+	}
+	.account-info {
+		position: relative;
+		top: -5rem;
+		margin: 10px auto;
+		width: fit-content;
+		.account-name {
+			font-weight: 600;
+			font-size: 1.8rem;
+			text-align: center;
+			text-transform: capitalize;
+		}
+		.account-username {
+			font-size: 1.2rem;
+			text-align: center;
+		}
+	}
+	.accountbtn {
+		border: 0.2rem solid $my-violet;
+		border-radius: 5rem;
+		color: $my-violet;
+		background-color: white;
+		padding: 5px 30px;
+		transition: all 0.5s ease-out;
+		display: block;
+		margin: auto;
+		text-transform: uppercase;
+		position: relative;
+		top: -4rem;
+		&:hover {
+			border: 0.2rem solid $my-orange;
+			color: $my-orange;
+		}
+	}
+	.following-header {
+		font-size: 2rem;
+	}
+	.following-body {
+		display: flex;
+	}
+}
+.following {
+	&-username {
+		font-size: 0.8rem;
+		color: grey;
+		transition: color 1s ease-out;
+	}
+	&-name {
+		font-size: 1.8rem;
+		transition: color 1s ease-out;
+	}
+	&:hover {
+		.following {
+			&-username {
+				color: $my-dark-grey;
+			}
+			&-name {
+				color: cornflowerblue;
+			}
+		}
+	}
+}

@@ -7,7 +7,10 @@ const Error = () => {
 				Error 404
 			</div>
 			<div className="row display-flex justify-content-center align-items-center ">
-				<img src="/Error-Page/confused.gif" alt="confused" />
+				<img
+					src={`${process.env.PUBLIC_URL}/Error-Page/confused.gif`}
+					alt="confused"
+				/>
 			</div>
 			<div className="row display-flex justify-content-center align-items-center mt-3">
 				You have requested a page we dont know

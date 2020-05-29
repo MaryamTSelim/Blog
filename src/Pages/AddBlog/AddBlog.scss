@@ -1,0 +1,40 @@
+@import "src/Sass/Variable.scss";
+.add-blog {
+	padding-top: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	input,
+	textarea {
+		width: 60%;
+		margin: 25px auto;
+		display: block;
+		font-size: 2rem;
+		border: none;
+		border-bottom: 3px solid $my-maroon;
+	}
+	.blog {
+		height: 100vh;
+		border: 3px solid $my-maroon;
+		padding: 10px;
+	}
+	button {
+		background-color: white;
+		padding: 5px 20px;
+		text-align: center;
+		font-size: 1.5rem;
+		font-weight: 600;
+		border-radius: 5rem;
+		display: inline-block;
+		margin: 0px auto;
+	}
+	.post {
+		color: springgreen;
+		border: 3px solid springgreen;
+	}
+	.cancel {
+		color: $my-red;
+		border: 3px solid $my-red;
+	}
+}

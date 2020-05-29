@@ -9,7 +9,6 @@ const Card = props => {
 	const { pagePositioningClasses, imgURL, angleColor, title, body } = {
 		...props
 	};
-	console.log(props);
 	return (
 		<div
 			className={`card-container ${pagePositioningClasses} container justify-content-center`}

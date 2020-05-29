@@ -1,0 +1,72 @@
+@import "src/Sass/Variable.scss";
+.blog-view {
+	.cover {
+		height: 40vh;
+		background-size: cover;
+		background-position: center;
+		position: relative;
+		background-color: $my-dark-grey;
+	}
+	.blog-body {
+		background-color: #fff;
+		position: relative;
+		top: -15vh;
+		z-index: 5;
+	}
+	.title {
+		font-size: 2.5rem;
+		text-transform: capitalize;
+	}
+	.tags {
+		font-size: 0.8rem;
+		display: flex;
+		text-transform: capitalize;
+		padding-left: 20px;
+		color: $my-maroon;
+	}
+	.author {
+		margin-top: 20px;
+		text-transform: capitalize;
+		font-size: 1.2rem;
+		font-weight: 600px;
+		transition: color 1s ease-out;
+		&:hover {
+			color: cornflowerblue;
+			cursor: pointer;
+		}
+	}
+	.body {
+		margin-top: 20px;
+	}
+	.edit {
+		width: 2rem;
+		height: 2rem;
+		color: cornflowerblue;
+		background-color: white;
+		border-radius: 50%;
+		border: 3px solid cornflowerblue;
+		font-size: 1rem;
+		margin-right: 2rem;
+	}
+
+	.delete,
+	.cancel {
+		width: 2rem;
+		height: 2rem;
+		color: $my-red;
+		border: 3px solid $my-red;
+		background-color: white;
+		border-radius: 50%;
+		font-size: 1rem;
+	}
+	.save {
+		width: 2rem;
+		height: 2rem;
+		color: springgreen;
+		background-color: white;
+		border-radius: 50%;
+		border: 3px solid springgreen;
+		font-size: 1rem;
+		margin-right: 2rem;
+	}
+}

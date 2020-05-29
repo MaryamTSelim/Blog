@@ -3,7 +3,7 @@ import "./Sign.scss";
 import Signup from "../../Components/Signup/Signup";
 import Login from "../../Components/Login/Login";
 
-const Sign = () => {
+const Sign = props => {
 	return (
 		<div className="container-fluid p-3 sign">
 			<div className="row">
@@ -13,7 +13,11 @@ const Sign = () => {
 						<br />
 						Nice to meet you <span className="color-gold">!</span>
 					</h4>
-					<Signup />
+					<Signup
+						signup={props.signup}
+						history={props.history}
+						users={props.users}
+					/>
 				</div>
 				<div className="col-lg-6 col-sm-12">
 					<h4 className=" p-3">
@@ -21,7 +25,11 @@ const Sign = () => {
 						<br />
 						Welcome back <span className="color-gold">!</span>
 					</h4>
-					<Login />
+					<Login
+						login={props.login}
+						history={props.history}
+						users={props.users}
+					/>
 				</div>
 			</div>
 		</div>

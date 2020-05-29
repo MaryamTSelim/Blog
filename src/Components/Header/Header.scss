@@ -4,7 +4,7 @@ header {
 	z-index: 100;
 	position: absolute;
 	.title {
-		font-family: Leckerli_One;
+		font-family: "Leckerli One", cursive;
 		font-size: 2rem;
 		text-align: center;
 	}
@@ -30,6 +30,7 @@ header {
 		border-radius: 5rem;
 		height: fit-content;
 		font-size: 1.1rem;
+		outline: none;
 	}
 
 	//Colored Header

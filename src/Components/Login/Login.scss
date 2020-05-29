@@ -7,6 +7,8 @@ form.login {
 		border: none;
 		border-bottom: 2px solid $my-gold;
 		outline: none;
+		transition: all 0.5s linear;
+
 		&:focus {
 			border-bottom: 2px solid $my-maroon;
 		}

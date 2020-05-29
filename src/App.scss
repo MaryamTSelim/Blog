@@ -1,15 +1,11 @@
 @import "node_modules/bootstrap/scss/bootstrap.scss";
 @import "src/Sass/Variable.scss";
+@import url("https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap");
 /*Header font*/
-@font-face {
-	font-family: Leckerli_One;
-	src: url("./Fonts/LeckerliOne-Regular.otf") format("opentype");
-}
-/*Title font*/
-@font-face {
-	font-family: NoSeven;
-	src: url("./Fonts/No.\ Seven\ Regular.otf") format("opentype");
-}
+// @font-face {
+// 	font-family: Leckerli_One;
+// 	src: url("./Fonts/LeckerliOne-Regular.otf") format("opentype");
+// }
 /*Normal Text*/
 @font-face {
 	font-family: Muli;
@@ -28,4 +24,35 @@ a {
 	&:hover {
 		text-decoration: none;
 	}
+}
+
+button,
+input {
+	outline: none;
+	&:focus {
+		outline: none;
+	}
+	&:active {
+		outline: none;
+	}
+}
+
+.footer {
+	background-color: $my-dark-grey;
+	color: white;
+	padding: 15px;
+	margin-top: 30px;
+	text-align: center;
+}
+
+.disable {
+	display: none;
+}
+
+.errMsg {
+	color: $my-red;
+	font-weight: 0.7rem;
+	margin: 10px auto;
+	display: block;
+	width: fit-content;
 }
